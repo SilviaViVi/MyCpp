@@ -6,5 +6,8 @@ int main()
     cout << "Please enter a digit\n";
     double digit;
     cin >> digit;
+
+    if (!cin) error("something went bad with the read");
+
     cout << digit << " mile == " << mile_per_km*digit << " km\n";
 }
